@@ -6,8 +6,7 @@ use solana_program::{
     pubkey::Pubkey,
 };
 
-use create::instruction::EscrowInstruction;
-
+use crate::{instruction::EscrowInstruction, error::EscrowError};
 pub struct Processor;
 
 impl Processor {
